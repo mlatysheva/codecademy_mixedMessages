@@ -7,3 +7,10 @@ The message is assembled out of three parts:
 
 The 'life' and 'studying' parts are stored in arrays and the 'inspirational saying' part is stored in 
 an array of objects with the author and the quote.
+
+I used the git version control system to track the changes and push them to github.
+
+To run the program, you need to have node.js installed and run the following command from the terminal 
+from the folder where the file is located:
+
+$ node mixedMessages.js

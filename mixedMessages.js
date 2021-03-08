@@ -1,3 +1,5 @@
+// Terminal javascript application with random inspirational messages for students.
+
 const lifeArray = ['easy', 'simple', 'exiting', 'dissappointing'];
 const studyingArray = ['effort', 'time', 'thought', 'dedication'];
 const sayingsObjArray = [{author: 'Vincent Van Gogh', saying: 'If you hear a voice within you say ‘you cannot paint,’ then by all means paint, and that voice will be silenced.'},
@@ -17,7 +19,7 @@ function createMessage() {
     let studyingMessage = `Studying requires ${studyingArray[Math.floor(Math.random() * lenStudying)]}.`;
     let ind = Math.floor(Math.random() * lenSayings);
     let sayingMessage = `As ${sayingsObjArray[ind]['author']} said, "${sayingsObjArray[ind]['saying']}"`;
-    // Math.min(lenLife, lenStudying, lenSayings);
+    
     return sayingMessage;
 }
 console.log(createMessage());

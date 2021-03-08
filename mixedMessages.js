@@ -15,11 +15,12 @@ const lenStudying = studyingArray.length;
 const lenSayings = sayingsObjArray.length;
 
 function createMessage() {
-    let lifeMessage = `Life is not always ${lifeArray[Math.floor(Math.random() * lenLife)]}.`;
-    let studyingMessage = `Studying requires ${studyingArray[Math.floor(Math.random() * lenStudying)]}.`;
-    let ind = Math.floor(Math.random() * lenSayings);
-    let sayingMessage = `As ${sayingsObjArray[ind]['author']} said, "${sayingsObjArray[ind]['saying']}"`;
+    const lifeMessage = `Life is not always ${lifeArray[Math.floor(Math.random() * lenLife)]}.`;
+    const studyingMessage = `Studying requires ${studyingArray[Math.floor(Math.random() * lenStudying)]}.`;
+    const ind = Math.floor(Math.random() * lenSayings);
+    const sayingMessage = `As ${sayingsObjArray[ind]['author']} once said, "${sayingsObjArray[ind]['saying']}"`;
+    const finalMessage = `${lifeMessage} \n${studyingMessage} \n${sayingMessage}`;
     
-    return sayingMessage;
+    return finalMessage;
 }
 console.log(createMessage());
